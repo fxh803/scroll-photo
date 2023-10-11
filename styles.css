@@ -1,0 +1,52 @@
+body {
+    overflow: hidden; /* 隐藏页面溢出部分 */
+    display: flex; /* 使用Flex布局使容器垂直排列 */
+    flex-direction: row; /*水平排列容器 */
+    margin: 0; /* 去除默认的外边距 */
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.image-container {
+    display: flex; /* 使用Flex布局使图片垂直排列 */
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 25%; /* 每个容器占据页面高度的25% */
+    height: 100%;
+    flex-direction: column; /* 垂直排列容器 */
+}
+
+img {
+    position: relative;
+    height: auto; /* 图片宽度自动适应父容器 */
+    max-width: 100%; /* 图片高度最大为父容器的高度 */
+    margin-bottom: 20px; /* 图片之间的间距，根据需要自行调整 */
+}
+#container2{
+    padding-top: 200px;
+}
+#container3{
+    padding-top: 100px;
+}
+#container4{
+    padding-top: 300px;
+}
+.mask {
+    position: absolute; 
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background-color: rgb(0, 0, 0); /* 设置蒙版的颜色和透明度 */
+    opacity: 0;
+    z-index: 1;
+}
+#mask2 {
+    top: -200px;
+}
+#mask3 {
+    top: -100px;
+}
+#mask4 {
+    top: -300px;
+}
